@@ -1,0 +1,383 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="org.sample.flawless_sample.HomeSettingActivity$PlaceholderFragment" >
+
+    <ScrollView
+        android:id="@+id/homeFilEditing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff4dbcae"
+                android:gravity="center_horizontal"
+                android:text="@string/pref_setting"
+                android:textColor="#ffffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/dataView_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/option_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal" >
+
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/option_Layout"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/heightWeightPreviewTexts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/setting_Layout"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/heightFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height From: " />
+
+                    <TextView
+                        android:id="@+id/heightTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height To :" />
+
+                    <TextView
+                        android:id="@+id/weightFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight From: " />
+
+                    <TextView
+                        android:id="@+id/weightTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight To: " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/heightWeightPreviewTexts"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Gender:"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+                            
+                            <RadioButton
+                                android:id="@+id/filterRadioM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:id="@+id/filterRadioF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Female" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Generation: "
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/filterRadio10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="10&apos;s" />
+
+                            <RadioButton
+                                android:id="@+id/filterRadio20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="20&apos;s" />
+
+                            <RadioButton
+                                android:id="@+id/filterRadio30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="30&apos;s" />
+
+                            <RadioButton
+                                android:id="@+id/filterRadio40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="40&apos;s+" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                		android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:layout_marginTop="10dp"
+               		 	android:gravity="center_horizontal"
+                		android:text="@string/style"
+                		android:textStyle="bold" />
+ 			
+            		<RelativeLayout
+                		android:layout_width="match_parent"
+                		android:layout_height="wrap_content">
+
+
+                		<LinearLayout
+                    		android:id="@+id/filterSettingStyleBox1"
+                    		android:layout_width="match_parent"
+                    		android:layout_height="wrap_content"
+                    
+                    		android:orientation="horizontal" >
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStyleVintage"
+                        		android:layout_width="0dip"
+                       	 		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/vintage" />
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStyleClassic"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/classic" />
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStyleCasual"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/casual" />
+                		</LinearLayout>
+                		<LinearLayout
+                    		android:id="@+id/filterSettingStyleBox2"
+                    		android:layout_width="match_parent"
+                   		 	android:layout_height="wrap_content"
+                    		android:orientation="horizontal"
+                    		android:layout_below="@id/filterSettingStyleBox1">
+                    		
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStyleBoho"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/boho" />
+                    
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStyleSporty"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/sporty" />
+                    
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStylePreppy"
+                       	 		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/preppy" />
+                		</LinearLayout>
+                		<LinearLayout
+                    		android:layout_width="match_parent"
+                    		android:layout_height="wrap_content"
+                    		android:orientation="horizontal"
+                   	 		android:layout_below="@id/filterSettingStyleBox2" >
+                    
+                    		<RadioButton
+                        		android:id="@+id/filterRadioStyleDandy"
+                        		android:layout_width="wrap_content"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:text="@string/dandy" />
+                		</LinearLayout>
+            		</RelativeLayout>
+
+					<TextView
+                    	android:layout_width="match_parent"
+                    	android:layout_height="wrap_content"
+                    	android:layout_marginTop="10dp"
+                    	android:text="@string/bodytype"
+                    	android:gravity="center_horizontal"
+                    	android:layout_marginLeft="10dp"
+                    	android:textStyle="bold" />
+            		<RelativeLayout
+                		android:layout_width="wrap_content"
+               		 	android:layout_height="wrap_content"
+                 	>
+
+                		<LinearLayout
+                    		android:id="@+id/filterSettingTypeBoxF1"
+                    		android:layout_width="match_parent"
+                    		android:layout_height="wrap_content"
+                    		android:orientation="horizontal"
+                    		android:visibility="invisible"
+                     	>
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypeApple"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                       	 		android:text="@string/apple" />
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypePear"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/pear" />
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypeBanana"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/banana" />
+                		</LinearLayout>
+                		<LinearLayout
+                    		android:id="@+id/filterSettingTypeBoxF2"
+                    		android:layout_width="match_parent"
+                    		android:layout_height="wrap_content"
+                    		android:orientation="horizontal"
+                    		android:visibility="invisible"
+                    		android:layout_below="@id/filterSettingTypeBoxF1"
+                     	>
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypeHourglass"
+                        		android:layout_width="wrap_content"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:text="@string/hourglass" />
+
+                		</LinearLayout>
+                		<LinearLayout
+                    		android:id="@+id/filterSettingTypeBoxM1"
+                    		android:layout_width="match_parent"
+                    		android:layout_height="wrap_content"
+                    		android:orientation="horizontal"
+                    		android:visibility="invisible">
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypeEctomorph"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/ectomorph" />
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypeMesomorph"
+                        		android:layout_width="0dip"
+                       	 		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/mesomorph" />
+
+                    		<RadioButton
+                        		android:id="@+id/filterRadioTypeEndomorph"
+                        		android:layout_width="0dip"
+                        		android:layout_height="wrap_content"
+                        		android:onClick="onRadioButtonClicked"
+                        		android:layout_weight="1"
+                        		android:text="@string/endomorph" />
+
+                		</LinearLayout>
+            		</RelativeLayout>
+                </LinearLayout>    
+            	<Button
+                	android:id="@+id/filterApply_btn"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentBottom="true"
+                	android:text="Apply" />
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </ScrollView>
+
+</FrameLayout>

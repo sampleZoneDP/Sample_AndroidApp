@@ -1,0 +1,31 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<resources>
+ 	<string-array name="height_array">
+        <item>100cm - 144cm</item>
+        <item>145cm - 149cm</item>
+        <item>150cm - 154cm</item>
+        <item>155cm - 159cm</item>
+        <item>160cm - 164cm</item>
+        <item>165cm - 169cm</item>
+        <item>170cm - 174cm</item>
+        <item>175cm - 179cm</item>
+        <item>180cm - 184cm</item>
+        <item>185cm - 189cm</item>
+        <item>190cm +</item>
+    </string-array>
+    <string-array name="weight_array">
+        <item>40kg - 44kg</item>
+        <item>45kg - 49kg</item>
+        <item>50kg - 54kg</item>
+        <item>55kg - 59kg</item>
+        <item>60kg - 64kg</item>
+        <item>65kg - 69kg</item>
+        <item>70kg - 74kg</item>
+        <item>75kg - 79kg</item>
+        <item>80kg - 84kg</item>
+        <item>85kg - 89kg</item>
+        <item>90kg - 94kg</item>
+        <item>95kg - 99kg</item>
+        <item>100kg +</item>
+    </string-array>
+</resources>

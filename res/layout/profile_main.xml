@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+       	android:id="@+id/profile_Layout"
+       	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="#ff4dbcae"
+        >
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:src="@drawable/profile"
+            android:layout_below="@+id/profUserName"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop = "5dp"
+            android:layout_marginLeft = "10dp"
+            android:layout_marginRight = "10dp"
+            android:layout_marginBottom = "10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:id="@+id/userCountingFav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/profile_picture" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Favoriting"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/favoriting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Favorited"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/favorited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pics"
+                    android:textColor="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/pics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+        </LinearLayout>
+		
+		<TextView
+            android:id="@+id/profUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/profileSetting_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_picture"
+            android:layout_below="@id/userCountingFav"
+            android:textColor="#ffffffff"
+            android:text="@string/updateProfile" />
+        <!--android:text="@string/updateProfile"--> 
+        
+    </RelativeLayout>
+     
+	<LinearLayout 
+	    android:id="@+id/option_Layout"
+       	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:layout_below="@id/profile_Layout"
+	    >
+        
+     	<Button
+            android:id="@+id/allPictures_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:textColor="#ffffffff"
+        	android:textStyle="bold"
+        	android:textSize="20sp"
+        	android:layout_weight="1"
+            android:text="@string/allPictures" />
+
+     	<Button
+            android:id="@+id/album_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:textColor="#ffffffff"
+        	android:textStyle="bold"
+        	android:textSize="20sp"
+        	android:layout_weight="1"
+            android:text="@string/album" />
+        <Button
+            android:id="@+id/tags_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:textColor="#ffffffff"
+        	android:textStyle="bold"
+        	android:textSize="20sp"
+        	android:layout_weight="1"
+            android:text="@string/tags" />
+       
+    </LinearLayout> 
+        
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/option_Layout"
+        android:clipToPadding="false"
+        android:gravity="left"
+        android:numColumns="3"
+        android:paddingBottom="5dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="5dp"
+        android:stretchMode="columnWidth" />
+
+    <ListView
+        android:id="@+id/userProfileAllView"
+        android:layout_below="@+id/option_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</RelativeLayout>

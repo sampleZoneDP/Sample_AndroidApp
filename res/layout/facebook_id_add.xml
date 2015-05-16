@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/facebookToHFPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Enter a password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/facebookToHFId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookToHFPw"
+        android:layout_alignLeft="@+id/facebookToHFPw"
+        android:ems="10"
+        android:hint="Enter a username" />
+
+    <Button
+        android:id="@+id/facebookBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/facebookNext1"
+        android:layout_alignBottom="@+id/facebookNext1"
+        android:layout_alignRight="@+id/facebookToHFId"
+        android:text="Go Back" />
+
+    <Button
+        android:id="@+id/facebookNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/facebookToHFPw"
+        android:layout_below="@+id/facebookToHFPw"
+        android:layout_marginTop="21dp"
+        android:text="NEXT" />
+
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/facebookProfileView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookToHFId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        facebook:preset_size="normal" >
+    </com.facebook.widget.ProfilePictureView>
+    
+   	
+    
+</RelativeLayout>

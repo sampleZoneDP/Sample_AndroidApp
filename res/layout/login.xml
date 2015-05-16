@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="User Id" />
+    
+    <TextView
+   	    
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="Login"
+   	    android:textSize="20dp"
+   	    android:gravity="center"
+   	    />
+
+   <EditText
+        android:id="@+id/pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" >
+
+      
+    </EditText>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pw"
+        android:layout_below="@+id/pw"
+        android:layout_marginTop="33dp"
+        android:text="Done" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/done"
+        android:layout_alignBottom="@+id/done"
+        android:layout_alignRight="@+id/id"
+        android:layout_marginRight="18dp"
+        android:text="Back" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="org.gp7.flawless.MainActivity$PlaceholderFragment" >
+    
+    <LinearLayout 
+        android:id="@+id/btn_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <Button 
+        android:id="@+id/home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffe6e6e5"
+        android:drawableTop="@drawable/icon_home"
+        android:text="Home"
+        android:layout_weight="1"
+            />
+        <Button 
+        android:id="@+id/allpost_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffc7c9c6"
+        android:drawableTop="@drawable/icon_allpost"
+        android:text="All Post"
+        android:layout_weight="1"
+            />
+        <Button 
+        android:id="@+id/camera_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffe6e6e5"
+        android:drawableTop="@drawable/icon_camera"
+        android:text="Camera"
+        android:layout_weight="1"
+            />
+        <Button 
+        android:id="@+id/history_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffc7c9c6"
+        android:drawableTop="@drawable/icon_history"
+        android:text="History"
+        android:layout_weight="1"
+            />
+        <Button 
+        android:id="@+id/profile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffe6e6e5"
+        android:drawableTop="@drawable/icon_profile"
+        android:text="Profile"
+        android:layout_weight="1"
+            />
+    </LinearLayout>
+    
+	<RelativeLayout
+        android:id="@+id/contentsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="invisible"
+        android:gravity="center_vertical" >          
+   	</RelativeLayout>
+   	<RelativeLayout
+        android:id="@+id/contentsLayoutOtherUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="invisible"
+        android:gravity="center_vertical" >          
+   	</RelativeLayout>
+   	<RelativeLayout
+        android:id="@+id/contentsLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="invisible"
+        android:gravity="center_vertical" >          
+   	</RelativeLayout>
+   	<RelativeLayout
+        android:id="@+id/contentsLayoutHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="invisible"
+        android:gravity="center_vertical" >          
+   	</RelativeLayout>
+   	<RelativeLayout
+        android:id="@+id/contentsLayoutAllpost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="invisible"
+        android:gravity="center_vertical" >          
+   	</RelativeLayout>
+   	<RelativeLayout
+        android:id="@+id/contentsLayoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="invisible"
+        android:gravity="center_vertical" >          
+   	</RelativeLayout>
+
+	<LinearLayout
+	    android:id="@+id/logo_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:orientation="vertical"
+	    android:background="@drawable/logo_layout"
+	    android:visibility="invisible" >
+
+	</LinearLayout>
+
+
+</RelativeLayout>

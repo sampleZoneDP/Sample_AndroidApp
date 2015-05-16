@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.example.flawless_actionbar.MainActivity" >
+
+    <item
+        android:id="@+id/profile_update"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_check"
+        android:title="@string/update"
+        android:visible="true"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/profile_update_cancel"
+        android:orderInCategory="101"
+        android:icon="@drawable/icon_cancel"
+        android:title="@string/cancel"
+        android:visible="true"
+        android:showAsAction="always"/>
+	
+</menu>

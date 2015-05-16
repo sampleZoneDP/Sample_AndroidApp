@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HommeFemme</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Home Setting</string>
+    <string name="profile_setting">Profile Update</string>
+    <string name="favorates">Favorates</string>
+    <string name="pref_setting">Preference Setting</string>
+    <string name="history">History</string>
+    <string name="sent">Sent</string>
+    <string name="new_setting">New</string>
+    <string name="hot_setting">Hot</string>
+    <string name="best_setting">Best</string>
+    <string name="received">Received</string>
+    <string name="username">Name</string>
+    <string name="userprofile">Profile</string>
+    <string name="favorating">Favorating</string>
+    <string name="favorated">Favorated</string>
+    <string name="userheight">Height</string>
+    <string name="userweight">Weight</string>
+    <string name="album">Album</string>
+    <string name="allPictures">All</string>
+    <string name="tags">Tags</string>
+    <string name="title_activity_home_setting">Filter Setting</string>
+    <string name="title_activity_camera">Camera Mode</string>
+    <string name="camera_upload">Do you want to upload this picture?</string>
+    <string name="updateProfile">Update Your Profile</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="style">Style</string>
+    <string name="bodytype">Body Type</string>
+    <string name="range">Range</string>   
+    <string name="hashtag">Hashtag</string> 
+    <string name="refresh">Refresh</string> 
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>  
+    <string name="flash">Flash</string> 
+    <string name="description">Description</string>
+    <string name="next">Next</string>
+    
+    <string name="vintage">Vintage</string>  
+    <string name="classic">Classic</string>  
+    <string name="casual">Casual</string>  
+    <string name="boho">Boho</string>  
+    <string name="sporty">Sporty</string>  
+    <string name="preppy">Preppy</string>  
+    <string name="dandy">Dandy</string>  
+    <string name="apple">Apple</string>  
+    <string name="pear">Pear</string>  
+    <string name="banana">Banana</string>  
+    <string name="hourglass">Hourglass</string>  
+    <string name="ectomorph">Ectomorph</string>  
+    <string name="mesomorph">Mesomorph</string>  
+    <string name="endomorph">Endomorph</string>  
+
+</resources>

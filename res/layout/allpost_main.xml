@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+
+
+	<ListView
+        android:id="@+id/allpostView_new"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+	<ListView
+        android:id="@+id/allpostView_hot"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+	<FrameLayout
+	    android:id="@+id/allpostOtherContents"
+	    android:visibility="invisible"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	</FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.example.flawless_actionbar.MainActivity" >
+
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_check"
+        android:title="@string/next"
+        app:showAsAction="ifRoom"/>
+	
+</menu>

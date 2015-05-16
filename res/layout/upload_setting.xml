@@ -1,0 +1,291 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="org.example.flawless_actionbar.DBActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ScrollView
+        android:id="@+id/uplodeViewSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           <FrameLayout
+               android:id="@+id/uplodePreviewPic"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+           </FrameLayout>
+
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/style"
+                android:textStyle="bold" />
+           
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                
+                <RadioButton
+                    android:id="@+id/updateStyleVintage"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_weight="1"
+                    android:text="@string/vintage" />
+
+                <RadioButton
+                    android:id="@+id/updateStyleClassic"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"   
+                    android:onClick="onRadioButtonClicked"    
+                    android:layout_weight="1"                
+                    android:text="@string/classic" />
+                <RadioButton
+                    android:id="@+id/updateStyleCasual"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"   
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_weight="1"                    
+                    android:text="@string/casual" />
+           </LinearLayout>
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                
+                <RadioButton
+                    android:id="@+id/updateStyleBoho"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_weight="1"
+                    android:text="@string/boho" />
+
+                <RadioButton
+                    android:id="@+id/updateStyleSporty"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"    
+                    android:onClick="onRadioButtonClicked"    
+                    android:layout_weight="1"               
+                    android:text="@string/sporty" />
+                <RadioButton
+                    android:id="@+id/updateStylePreppy"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"     
+                    android:onClick="onRadioButtonClicked"  
+                    android:layout_weight="1"                
+                    android:text="@string/preppy" />
+           </LinearLayout>
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                
+                <RadioButton
+                    android:id="@+id/updateStyleDandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/dandy" />
+           </LinearLayout>
+			
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/bodytype"
+                android:textStyle="bold" />
+           
+           <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+           		<LinearLayout
+           		    android:id="@+id/uploadTypeBoxF1"
+               		android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+                	android:orientation="horizontal"
+                	android:visibility="invisible" >
+                
+                	<RadioButton
+                    	android:id="@+id/updateTypeApple"
+                    	android:layout_width="0dip"
+                    	android:layout_height="wrap_content"
+                    	android:onClick="onRadioButtonClicked"
+                    	android:layout_weight="1"
+                    	android:text="@string/apple" />
+
+                	<RadioButton
+                   		android:id="@+id/updateTypeBanana"
+                    	android:layout_width="0dip"
+                    	android:layout_height="wrap_content"  
+                    	android:onClick="onRadioButtonClicked"  
+                    	android:layout_weight="1"                   
+                    	android:text="@string/banana" />
+                	<RadioButton
+                    	android:id="@+id/updateTypePear"
+                    	android:layout_width="0dip"
+                    	android:layout_height="wrap_content"  
+                    	android:onClick="onRadioButtonClicked" 
+                    	android:layout_weight="1"                    
+                    	android:text="@string/pear" />
+           		</LinearLayout>
+           		<LinearLayout
+           		    android:id="@+id/uploadTypeBoxM1"
+               		android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+                	android:orientation="horizontal"
+                	android:visibility="invisible" >
+                
+                	<RadioButton
+                    	android:id="@+id/updateTypeEcto"
+                    	android:layout_width="0dip"
+                    	android:layout_height="wrap_content"
+                    	android:onClick="onRadioButtonClicked"
+                    	android:layout_weight="1"
+                    	android:text="@string/ectomorph" />
+
+                	<RadioButton
+                   		android:id="@+id/updateTypeMeso"
+                    	android:layout_width="0dip"
+                    	android:layout_height="wrap_content"  
+                    	android:onClick="onRadioButtonClicked"
+                    	android:layout_weight="1"                     
+                    	android:text="@string/mesomorph" />
+                	<RadioButton
+                    	android:id="@+id/updateTypeEndo"
+                    	android:layout_width="0dip"
+                    	android:layout_height="wrap_content"    
+                    	android:onClick="onRadioButtonClicked"   
+                    	android:layout_weight="1"                
+                    	android:text="@string/endomorph" />
+           		</LinearLayout>
+           </RelativeLayout>
+           <LinearLayout
+               	android:id="@+id/uploadTypeBoxF2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+                
+                <RadioButton
+                    android:id="@+id/updateTypeHourglass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/hourglass" />
+
+           </LinearLayout>
+                           
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Look"
+                android:textStyle="bold" />
+           
+           <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/uploadLookBoxcombine"
+               		android:layout_width="match_parent"
+               		android:layout_height="48dp"
+               		android:orientation="horizontal" >
+
+               	<RadioButton
+                   android:id="@+id/UpdateLookSlim"
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"    
+                   android:onClick="onRadioButtonClicked"   
+                   android:layout_weight="1" 
+                   android:text="Slim" />
+
+               	<RadioButton
+                   android:id="@+id/UpdateLookLongLeg"
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"    
+                   android:onClick="onRadioButtonClicked"   
+                   android:layout_weight="1" 
+                   android:text="Long Leg" />
+
+			 	</LinearLayout>
+			 	<LinearLayout
+			 	android:id="@+id/uploadLookBoxF1"
+			 	android:layout_below="@id/uploadLookBoxcombine"
+               	android:layout_width="match_parent"
+               	android:layout_height="48dp"
+               	android:visibility="invisible"
+               	android:orientation="horizontal" >
+               	<RadioButton
+                   android:id="@+id/UpdateLookGlamorous"
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"    
+                   android:onClick="onRadioButtonClicked"   
+                   android:layout_weight="1" 
+                   android:text="Glamorous" />
+               	<RadioButton
+                   android:id="@+id/UpdateLookBoyFriend"
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"    
+                   android:onClick="onRadioButtonClicked"   
+                   android:layout_weight="1" 
+                   android:text="Boyfriend Style" />
+				</LinearLayout>
+				<LinearLayout
+			 	android:id="@+id/uploadLookBoxM1"
+			 	android:layout_below="@id/uploadLookBoxcombine"
+               	android:layout_width="match_parent"
+               	android:layout_height="48dp"
+               	android:visibility="invisible"
+               	android:orientation="horizontal" >
+				<RadioButton
+                   android:id="@+id/UpdateLookChic"
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"    
+                   android:onClick="onRadioButtonClicked"   
+                   android:layout_weight="1"                   
+                   android:text="Chic" />        
+                	    
+				<RadioButton
+                   android:id="@+id/UpdateLookBadboy"
+                   android:layout_width="0dip"
+                   android:layout_height="wrap_content"    
+                   android:onClick="onRadioButtonClicked"   
+                   android:layout_weight="1"                   
+                   android:text="Badboy Style" />
+           		</LinearLayout>
+           </RelativeLayout>
+           
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/hashtag"
+                android:textStyle="bold" />
+           
+           <EditText
+                android:id="@+id/updateHashtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hashtag" >
+           </EditText>
+           	   
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
